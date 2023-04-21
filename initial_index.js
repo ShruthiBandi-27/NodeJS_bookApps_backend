@@ -79,3 +79,26 @@ app.listen(PORT, () => {
 console.log("end of index.js");
 
 
+//import these in index.js
+// import jwt from "jsonwebtoken";
+// import { auth } from "./middleware/auth.js";
+// import nodemailer from "nodemailer";
+
+//create custom middleware 
+// middleware-> auth.js
+
+//custom middleware
+
+// import jwt from 'jsonwebtoken';
+
+// export const auth = (req, res, next) => {
+//     try{
+//     const token = req.header("x-auth-token");
+//     console.log(token);
+//     jwt.verify(token, process.env.SECRET_KEY);
+//     next();
+//     }
+//     catch(err){
+//         res.send({message: err.message});
+//     }
+// }
