@@ -16,5 +16,5 @@ export async function updateBookById(id, updateBook) {
         updateOne({ id: id }, { $set: updateBook });
 }
 export async function addBooksToDB(newBook) {
-    return await client.db("shruthi").collection("books").insertMany(newBook);
+    return await client.db("shruthi").collection("books").insertOne(newBook);
 }

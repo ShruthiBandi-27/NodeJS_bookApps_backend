@@ -4,11 +4,11 @@ const router = express.Router();
 
 //get all books
 router.get("/", async(req, res) => {
-    const { language, rating } = req.query;
-    if (req.query.rating) {
-        req.query.rating = +req.query.rating;
-      }
-      console.log(req.query, language);
+    // const { language, rating } = req.query;
+    // if (req.query.rating) {
+    //     req.query.rating = +req.query.rating;
+    //   }
+    //   console.log(req.query, language);
     const books = await getAllBooks(req);
     res.send(books);
 })
